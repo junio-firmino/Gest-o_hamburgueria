@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>720</width>
-    <height>712</height>
+    <width>500</width>
+    <height>700</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -126,7 +126,7 @@ border-radius: 5px;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="botao_saida">
+           <widget class="QPushButton" name="botao_sair">
             <property name="maximumSize">
              <size>
               <width>25</width>
@@ -187,6 +187,11 @@ Qpushbutton:hover{
            <height>550</height>
           </size>
          </property>
+         <property name="font">
+          <font>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
          <property name="styleSheet">
           <string notr="true">background-color: rgb(50, 50, 50);
 border-radius: 10px;</string>
@@ -216,6 +221,204 @@ border-radius: 10px;</string>
            <enum>QFrame::Raised</enum>
           </property>
          </widget>
+         <widget class="QLineEdit" name="campo_user">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>200</y>
+            <width>390</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Trebuchet MS</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="mouseTracking">
+           <bool>false</bool>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+border-radius: 20px;
+background-color: rgb(255, 255, 255);
+}
+
+</string>
+          </property>
+          <property name="maxLength">
+           <number>35</number>
+          </property>
+          <property name="cursorPosition">
+           <number>0</number>
+          </property>
+          <property name="placeholderText">
+           <string>Usuário</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="campo_senha">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>290</y>
+            <width>390</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Trebuchet MS</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="mouseTracking">
+           <bool>false</bool>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+border-radius: 20px;
+background-color: rgb(255, 255, 255);
+}
+</string>
+          </property>
+          <property name="inputMask">
+           <string/>
+          </property>
+          <property name="maxLength">
+           <number>18</number>
+          </property>
+          <property name="cursorPosition">
+           <number>0</number>
+          </property>
+          <property name="placeholderText">
+           <string>Senha</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="campo_entrar">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>380</y>
+            <width>180</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Trebuchet MS</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="mouseTracking">
+           <bool>false</bool>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+border-radius: 20px;
+background-color: rgb(255, 255, 255);
+background-color: rgb(20, 255, 130);
+}
+</string>
+          </property>
+          <property name="inputMask">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Entrar</string>
+          </property>
+          <property name="maxLength">
+           <number>18</number>
+          </property>
+          <property name="cursorPosition">
+           <number>6</number>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="placeholderText">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="campo_senha_3">
+          <property name="geometry">
+           <rect>
+            <x>240</x>
+            <y>380</y>
+            <width>180</width>
+            <height>50</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Trebuchet MS</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="mouseTracking">
+           <bool>false</bool>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit {
+border-radius: 20px;
+background-color: rgb(255, 255, 255);
+background-color: rgb(20, 255, 130);
+}
+</string>
+          </property>
+          <property name="inputMask">
+           <string/>
+          </property>
+          <property name="text">
+           <string>Cadastrar</string>
+          </property>
+          <property name="maxLength">
+           <number>18</number>
+          </property>
+          <property name="cursorPosition">
+           <number>9</number>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="placeholderText">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_login">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>130</y>
+            <width>171</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Trebuchet MS</family>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Tela de Login</string>
+          </property>
+         </widget>
         </widget>
        </item>
       </layout>
@@ -238,6 +441,25 @@ border-radius: 10px;</string>
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>3</y>
+         <width>161</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Trebuchet MS</family>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Feynman Technology</string>
+       </property>
+      </widget>
      </widget>
     </item>
    </layout>
@@ -247,7 +469,7 @@ border-radius: 10px;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>720</width>
+     <width>500</width>
      <height>26</height>
     </rect>
    </property>
