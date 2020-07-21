@@ -7,6 +7,7 @@
 # WARNING! All changes made in this file will be lost!
 
 
+#import file_rc_rc
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
@@ -33,8 +34,8 @@ class Ui_MainWindow(object):
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
         self.frame_error = QtWidgets.QFrame(self.frame_sup)
         self.frame_error.setMaximumSize(QtCore.QSize(450, 16777215))
-        self.frame_error.setStyleSheet("background-color: rgb(236, 85, 88);\n"
-"border-radius: 5px;")
+        self.frame_error.setStyleSheet("background-color: rgb(236, 85, 88);\n border-radius: 5px;")
+        self.frame_error.hide()                                 # ocultou o frame erro
         self.frame_error.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.frame_error.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_error.setObjectName("frame_error")
@@ -49,13 +50,14 @@ class Ui_MainWindow(object):
         self.label_error.setObjectName("label_error")
         self.horizontalLayout_3.addWidget(self.label_error)
         self.botao_sair = QtWidgets.QPushButton(self.frame_error)
-        self.botao_sair.setMaximumSize(QtCore.QSize(25, 25))
         self.botao_sair.setStyleSheet("Qpushbutton{\n"
 " border-radius: 5px;\n"
 "}\n"
 "Qpushbutton:hover{\n"
 "     background-color: rgb(0, 0, 0);\n"
 "}")
+
+        self.botao_sair.setMaximumSize(QtCore.QSize(25, 25))
         self.botao_sair.setObjectName("botao_sair")
         self.horizontalLayout_3.addWidget(self.botao_sair)
         self.horizontalLayout_2.addWidget(self.frame_error)
@@ -81,7 +83,7 @@ class Ui_MainWindow(object):
         self._interior.setObjectName("_interior")
         self.frame = QtWidgets.QFrame(self._interior)
         self.frame.setGeometry(QtCore.QRect(160, 20, 120, 80))
-        self.frame.setStyleSheet("image: url(:/logo/Dugui_1.png);")
+        self.frame.setStyleSheet("image: url(:/logo/Dugui_1.png);")    #imagem da tela de login
         self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame.setObjectName("frame")
@@ -203,7 +205,6 @@ class Ui_MainWindow(object):
         self.campo_senha_3.setText(_translate("MainWindow", "Cadastrar"))
         self.label_login.setText(_translate("MainWindow", "Tela de Login"))
         self.label.setText(_translate("MainWindow", "Feynman Technology"))
-#import file_rc_rc
 
 
 if __name__ == "__main__":
